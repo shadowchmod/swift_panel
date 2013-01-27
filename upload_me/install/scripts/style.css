@@ -1,0 +1,212 @@
+/*
+****** DO NOT REMOVE ******
+SWIFT Panel Style Sheet (www.SwiftPanel.com)
+Copyright @ 2008 All Rights Reserved.
+****** DO NOT REMOVE ******
+*/
+
+body {
+	text-align: center;
+	background: #333333 url(../images/background.png);
+}
+body, td, th, select, input, textarea {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+p {
+	padding: 0px;
+	margin: 8px 0px 10px;
+}
+form, a, img {
+	padding: 0px;
+	margin: 0px;
+}
+img {
+	border: 0 none;
+}
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #0A49A9;
+	text-decoration: none;
+}
+a:visited {
+	color: #0A49A9;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+h1 {
+	font-size: 24px;
+	font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+#topbg {
+	background: url(../images/topbg.png) repeat-x;
+	height: 95px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index:1;
+}
+#nav {
+	width: 940px;
+	margin-right: -470px;
+	position: absolute;
+	top: 0px;
+	right: 50%;
+	height: 60px;
+	background: url(../images/swiftpanel.png) no-repeat 12px center;
+	z-index:2;
+}
+#nav #home {
+	position: absolute;
+	top: 14px;
+	left: 230px;
+	font-size: 28px;
+	color: #FFFFFF;
+	font-weight: bold;
+	width: 520px;
+}
+#page {
+	width: 940px;
+	margin-right: -470px;
+	position: absolute;
+	top: 67px;
+	right: 50%;
+	text-align: left;
+	z-index: 1;
+}
+#content {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+#page .title {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.button {
+	overflow: visible;
+	width:auto;
+	text-decoration: none;
+	background-color: #F5F5F5;
+	border: 1px solid #DEDEDE;
+	border-right: 1px solid #BBBBBB;
+	border-bottom: 1px solid #BFBFBF;
+	cursor: pointer;
+	line-height: 130%;
+	color: #333333;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	margin-right: 5px;
+	padding:3px 10px 4px 10px;
+}
+*:first-child+html .button {
+	padding:4px 10px 3px 10px;
+}
+.button:hover {
+	background-color:#dff4ff;
+	border:1px solid #A7CEDF;
+	color:#336699;
+}
+.button:active {
+	background-color:#6299c5;
+	border:1px solid #6299c5;
+	color:#fff;
+}
+.green {
+	color:#529214;
+}
+.green:hover, .green:hover {
+	background-color:#E9EFD1;
+	border:1px solid #AACF81;
+	color:#529214;
+}
+.green:active {
+	background-color:#529214;
+	border:1px solid #529214;
+	color:#fff;
+}
+.blue {
+	color:#0A49A9;
+}
+.blue:hover {
+	color:#0A49A9;
+}
+.blue:active {
+	color:#fff;
+}
+.red {
+	color:#d12f19;
+}
+.red:hover {
+	background-color:#fbe3e4;
+	border:1px solid #EF959B;
+	color:#d12f19;
+}
+.red:active {
+	background-color:#d12f19;
+	border:1px solid #d12f19;
+	color:#fff;
+}
+/* Footer */
+#footer {
+	position: relative;
+	top: 7px;
+	width: 920px;
+	left: 10px;
+	font-weight: bold;
+	font-size: 12px;
+}
+#footer .left {
+	color: #FF9900;
+	text-align:left;
+	width:260px;
+}
+#footer .left a {
+	color: #FF9900;
+}
+#footer .center {
+	color: #FFFFFF;
+	text-align:center;
+	width:400px;
+}
+#footer .center a {
+	color: #FFFFFF;
+}
+#footer .right {
+	text-align:right;
+	width:260px;
+	color: #FF9900;
+}
+#footer .right a {
+	color: #FF9900;
+}
+.ok {
+	color: #009900;
+	font-weight:bold;
+	font-style:italic;
+}
+.failed {
+	color: #FF0000;
+	font-weight:bold;
+	font-style:italic;
+}

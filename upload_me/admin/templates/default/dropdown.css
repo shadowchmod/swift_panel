@@ -1,0 +1,113 @@
+/*
+****** DO NOT REMOVE ******
+SWIFT Panel Style Sheet (www.SwiftPanel.com)
+Copyright @ 2008 All Rights Reserved.
+****** DO NOT REMOVE ******
+*/
+
+.dropdown {
+	visibility:hidden;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.dropdown ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-bottom: 1px solid #444;
+}
+.dropdown li {
+	margin:0;
+	padding:0;
+	cursor:pointer;
+	list-style:none;
+	margin-right: 6px;
+}
+.dropdown a {
+	color: #fff;
+	font-weight: bold;
+	padding-top: 7px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	padding-left: 32px;
+	text-decoration:none;
+	display: inline-block;
+	background: #222 no-repeat 4px 3px;
+	border-top: 1px solid #444;
+	border-right: 1px solid #444;
+	border-left: 1px solid #444;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+}
+.dropdown a:hover {
+	color: #AA0000;
+	border-top: 1px solid #555;
+	border-right: 1px solid #555;
+	border-left: 1px solid #555;
+	background-color: #fff;
+}
+.dropdown a:active {
+	color: #AA0000;
+	background-color: #FFCC66;
+}
+.dropdown a.current {
+	color: #FFFFFF;
+	border-top: 1px solid #A00;
+	border-right: 1px solid #A00;
+	border-left: 1px solid #A00;
+	background-color: #A00;
+}
+.dropdown li.home a {
+	background-image: url(images/home_24_c.png);
+}
+.dropdown li.clients a {
+	background-image: url(images/group_24.png);
+}
+.dropdown li.servers a {
+	background-image: url(images/network_24.png);
+}
+.dropdown li.boxes a {
+	background-image: url(images/hard_disk_24.png);
+}
+.dropdown li.utilities a {
+	background-image: url(images/monitor_24.png);
+}
+.dropdown li.configuration a {
+	background-image: url(images/gear_24.png);
+}
+.dropdown li.help a {
+	background-image: url(images/help_24_c.png);
+}
+.dropdown li.account a, .dropdown li.logout a {
+	padding-left: 10px;
+	color: #FFFFCC;
+}
+.dropdown li.account a:hover, .dropdown li.logout a:hover {
+	color: #AA0000;
+}
+.dropdown li.account a.current:hover, .dropdown li.logout a.current:hover {
+	color: #FFFFCC;
+}
+.dropdown ul li {
+	margin:0;
+	padding:0;
+}
+* html .dropdown ul li {
+	margin-left: -16px;
+}
+.dropdown ul li a {
+	padding-top: 6px;
+	padding-right:0px;
+	padding-bottom: 6px;
+	white-space: nowrap;
+	background-image: none !important;
+	width: 125px;
+	padding-left: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+}
+.dropdown li.submenu {
+}
+.dropdown ul li.submenu {
+}

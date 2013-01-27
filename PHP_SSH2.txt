@@ -1,0 +1,118 @@
+=====================================================================
+               SWIFT Panel - PHP Game Control Panel
+=====================================================================
+
+=====================================================================
+                     PHP SSH2 DETAILS
+=====================================================================
+
+SSH2 is simply a extension to PHP which will allow secure communications between the webserver and the remote game servers.
+SSH2 is more than likely not installed on any shared web spaces so I recommend a Virtual Private Server.
+
+If you are not familair with linux commands and do not feel confortable installing SSH2,
+we offer FREE WEB HOSTING for SWIFT Panel. We would give you a subdomain of swiftpanel.com which you
+can easily setup a redirect from your domain to hide the subdomain. Your clients will not ever know they left your domain.
+
+Contact support@swiftpanel.com for any questions!
+
+=====================================================================
+                    INSTALLATION INSTRUCTIONS
+=====================================================================
+
+Upload a php script <?=phpinfo();?> to find "Configuration File (php.ini) Path" and "extension_dir".
+
+I am using CentOS 5 with cPanel and PHP 5.2.6 with Apache 2.2.
+Here are my paths:
+Configuration File: /usr/local/lib
+extension_dir:  /usr/local/lib/php/extensions/no-debug-non-zts-20060613
+
+You need these values to know where to upload the ssh2.so to and where to edit the php.ini file.
+
+
+The following example is for CentOS 5.x w/ cPanel.
+
+
+Update or install: (Most of these should be installed already if you use cPanel)
+
+    automake
+
+    php-devel
+
+    libtool
+
+    openssl-devel
+
+    gcc++
+
+
+Install libssh2
+
+    cd /usr/src
+
+    wget http://surfnet.dl.sourceforge.net/sourceforge/libssh2/libssh2-1.0.tar.gz
+
+    tar -zxf libssh2-1.0.tar.gz
+
+    cd libssh2-1.0
+
+    ./configure
+
+    make all install
+
+    cd /usr/src
+
+    rm -Rf libssh2-1.0
+
+    rm -f libssh2-1.0.tar.gz
+
+
+Install ssh2 PHP bindings
+
+    cd /usr/lib/php (Path might differ on your server) (Most likely /usr/lib/php4 if you are using PHP 4)
+
+    wget http://pecl.php.net/get/ssh2-0.11.0.tgz
+
+    tar -zxf ssh2-0.11.0.tgz
+
+    cd ssh2-0.11.0
+
+    phpize && ./configure --with-ssh2 && make
+
+    cd modules
+
+    mv ssh2.so /usr/local/lib/php/extensions/no-debug-non-zts-20060613 (Replace with your Extension Path)
+
+    cd /usr/lib/php (Path might differ on your server)
+
+    rm -Rf ssh2-0.11.0
+
+    rm -f ssh2-0.11.0.tgz
+
+
+Edit PHP settings
+
+    vi /usr/local/lib/php.ini (Replace with your Configuration Path)
+
+    extension_dir = "/usr/local/lib/php/extensions/no-debug-non-zts-20060613" (Replace with your Extension Path)
+
+    extension = ssh2.so
+
+
+Restart Apache
+
+    service httpd restart
+
+
+You can run "php -m" and see if ssh2 is listed.
+
+
+=====================================================================
+                           NEED HELP?
+=====================================================================
+
+Support Ticket: http://www.swiftpanel.com/client/
+Forums: http://www.swiftpanel.com/forum
+Email Us: Support@SwiftPanel.com
+IRC: #SwiftPanel (GameSurge Network)
+
+=====================================================================
